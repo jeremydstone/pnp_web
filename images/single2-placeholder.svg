@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-  <rect width="400" height="400" fill="#1a1a2e"/>
-  <polygon points="200,100 280,240 120,240" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.4"/>
-  <polygon points="200,140 250,220 150,220" fill="none" stroke="#818cf8" stroke-width="2" opacity="0.3"/>
-  <circle cx="200" cy="190" r="15" fill="#60a5fa" opacity="0.3"/>
-  <text x="200" y="300" text-anchor="middle" fill="#888" font-family="sans-serif" font-size="16" letter-spacing="2">SINGLE TWO</text>
-</svg>

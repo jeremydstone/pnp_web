@@ -238,6 +238,24 @@ img {
   padding: 50px 0;
 }
 
+#music {
+  padding-bottom: 25px;
+}
+
+#follow {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#band {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#press {
+  padding-top: 25px;
+}
+
 .section-title {
   font-family: 'Inter', sans-serif;
   font-size: 35px;
@@ -479,20 +497,6 @@ img {
   border: none;
 }
 
-/* ========================================
-   Footer
-   ======================================== */
-
-.footer {
-  padding: 40px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  text-align: center;
-}
-
-.footer p {
-  font-size: 0.85rem;
-  color: rgba(224, 224, 232, 0.4);
-}
 
 /* ========================================
    Reveal Animations
