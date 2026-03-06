@@ -182,16 +182,23 @@ img {
    ======================================== */
 
 .hero {
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 60%),
-              radial-gradient(ellipse at 20% 80%, rgba(192, 132, 252, 0.1) 0%, transparent 50%),
-              #0a0a0f;
+  background: url('../images/heroimage.jpg') center calc(100% + 100px) / cover no-repeat;
+  background-color: #0a0a0f;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 15, 0.27);
+  z-index: 1;
 }
 
 .hero-content {
@@ -201,47 +208,16 @@ img {
 }
 
 .hero-title {
-  font-family: 'Sora', sans-serif;
-  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
+  color: #fff;
 }
 
-.hero-line {
-  display: block;
-  background: linear-gradient(135deg, #e0e0e8, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
 
-.hero-amp {
-  display: block;
-  font-size: 0.5em;
-  background: linear-gradient(135deg, #c084fc, #818cf8, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin: 4px 0;
-}
 
-.hero-tagline {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
-  font-weight: 300;
-  color: rgba(224, 224, 232, 0.6);
-  letter-spacing: 0.08em;
-}
-
-.hero-gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 200px;
-  background: linear-gradient(to top, #0a0a0f, transparent);
-  z-index: 1;
-}
 
 @keyframes heroFadeIn {
   from {
